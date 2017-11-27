@@ -1,0 +1,184 @@
+body {
+	font-family: Arial;
+    background-color: lightgoldenrodyellow;
+}
+table {
+	border-collapse: collapse;
+	margin: auto;
+	width: 35%;
+	border: 1px solid darkcyan;
+}
+
+table.login {
+	border-collapse: collapse;
+	margin: auto;
+	width: 35%;
+	border: 3px solid darkcyan;
+}
+td{
+    text-align: center;
+	border: 1px solid black;
+    padding: 3px 7px 2px 7px;
+}
+td.login{
+    text-align: center;
+    border:none;
+    padding: 3px 7px 2px 7px;
+}
+td.first {
+	text-align: center;
+	border: 1px solid black;
+    border-left-width: 3px;
+    padding: 3px 7px 2px 7px;
+    width: 34%;
+}
+td.second{
+    text-align: center;
+	border: 1px solid black;
+    border-right-width: 3px;
+    padding: 3px 7px 2px 7px;
+    width: 33%;
+}
+td.third-end{
+    text-align: center;
+	border: 1px solid black;
+    border-right-width: 3px;
+    padding: 3px 7px 2px 7px;
+    width: 33%;
+}
+
+
+th {
+	text-align: center;
+    background-color: darkblue;
+    color: #F2F0E1;
+}
+
+fieldset {
+	margin: auto;
+	width: 30%;
+}
+
+header {
+	position: relative;
+	font-size: Large;
+	font-weight: bold;
+	padding-bottom: 40px;
+	padding-top: 20px;
+	color: black;
+	margin: auto;
+	width: 100%;
+	background-color: lightcoral;
+}
+input[type=text]{
+    border: none;
+    background-color: lightsalmon;
+}
+input[type=text]:focus {
+    background-color: lightblue;
+}
+/* classes */
+
+.circle /*Wanted to use that for split but didnt make it right for this to be usefull*/
+    {
+    width:100px;
+    height:100px;
+    
+    border-radius:50px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #000;
+    
+    font-size:50px;
+    line-height:100px;
+    text-align:center;
+    color: #000;
+    }
+.center
+{
+    text-align:center;
+    width:100%;
+
+}
+
+/* neuporabljeno <img id="left" src="w3c-logo.jpg"> */
+#center{
+    margin: auto;
+    text-align: center;
+    width: 90%
+}
+#bowling-table{
+    background-color: lightsalmon;
+    border-color: darkblue;
+}
+#tdhidden{
+    border-width: 0px;
+}
+#left {
+	float: left;
+    margin: auto;
+
+}
+#right {
+    float: right;
+}
+#clearLR{
+    clear:both; 
+}
+#content2 {
+	background-color: #F2F0E1;
+	padding: 10px;
+	width: 780px;
+	margin: auto;
+}
+
+#footer {
+	font-family: "Consolas";
+	font-size: small;
+	text-align: center;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	color: #830300;
+	margin: auto;
+	width: 800px;
+	background-color: #B6C48B;
+}
+
+#content1 {
+	background-color: #EBE8CC;
+	color: #1E5735;	
+	margin: auto;
+	padding: 10px;
+	width: 780px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*mobile */
+ [class*="col-"] {
+        width: 100%;
+    }
+/* desktop */
+@media only screen and (min-width: 800px) {
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+
+    .col-1 { width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    .col-3 { width: 25%; }
+    .col-4 { width: 33.33%; }
+    .col-5 { width: 41.66%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.33%; }
+    .col-8 { width: 66.66%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66%; }
+    .col-12 { width: 100%; }
+
+}
